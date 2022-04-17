@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // replace your database connection string here
-mongoose.connect(process.env.DATABASE_URL,{ 
+mongoose.connect('mongodb+srv://icefireknight:Sprall2320@cluster0.2vnrt.mongodb.net/pictures?retryWrites=true&w=majority',{ 
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true

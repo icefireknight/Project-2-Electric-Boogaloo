@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const logger = require('morgan');
@@ -7,6 +8,8 @@ const session = require('express-session');
 const passport = require('passport');
 const methodOverride = require('method-override');
 const indexRoutes = require('./routes/index');
+const loginRoutes = require('./routes/login');
+const galleryRoutes = require('./routes/gallery');
 // load the env consts
 require('dotenv').config();
 
@@ -50,6 +53,8 @@ app.use(function (req, res, next) {
 
 // mount all routes with appropriate base paths
 app.use('/', indexRoutes);
+app.use('/login', loginRoutes);
+app.use('gallery', galleryRoutes);
 
 
 // invalid request, send 404 page
