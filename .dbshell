@@ -1,0 +1,12 @@
+help
+db.help()
+show dbs
+use flights
+show dbs
+db
+use local
+show dbs
+show dbs
+use local
+show collections
+use photos

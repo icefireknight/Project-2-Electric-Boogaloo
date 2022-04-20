@@ -1,0 +1,17 @@
+h1{
+    color:brown;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    justify-self: center;
+}
+
+#unique{
+    color:blue
+}
+
+.not-unique {
+    color: blanchedalmond;
+}
+
+#comments-title{
+    font-size: 28px;
+}

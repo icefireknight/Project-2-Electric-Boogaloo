@@ -1,0 +1,12 @@
+[user]
+	email = jaxtonboom@gmail.com
+	name = Hazel Medina
+[core]
+	excludesfile = /home/amedina9/.gitignore_global
+	editor = code --wait
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
+[http]
+	sslverify = false
