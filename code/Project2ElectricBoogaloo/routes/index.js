@@ -20,7 +20,7 @@ router.get('/auth/google', passport.authenticate(
 router.get('/oauth2callback', passport.authenticate(
   'google',
   {
-    successRedirect : '/gallery', // where do you want the client to go after you login 
+    successRedirect : '/gallery/gallery', // where do you want the client to go after you login 
     failureRedirect : '/login' // where do you want the client to go if login fails
   }
 ));

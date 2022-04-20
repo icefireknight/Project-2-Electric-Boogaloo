@@ -54,7 +54,7 @@ app.use(function (req, res, next) {
 // mount all routes with appropriate base paths
 app.use('/', indexRoutes);
 app.use('/login', loginRoutes);
-app.use('gallery', galleryRoutes);
+app.use('/gallery', galleryRoutes);
 
 
 // invalid request, send 404 page

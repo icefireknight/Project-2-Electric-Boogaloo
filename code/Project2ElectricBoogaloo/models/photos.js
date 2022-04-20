@@ -2,11 +2,12 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const photoSchema = new Schema({
-    url: {
+    link: {
         type: String,
         required: true
     },
-    description: String
+    description: String,
+    date: Date
 }, {
     timestamps: true
 });
