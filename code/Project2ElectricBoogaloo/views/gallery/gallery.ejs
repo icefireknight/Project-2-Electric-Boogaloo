@@ -21,6 +21,15 @@
             <tr>
               <td><%= m.link %></td>
               <td><%= m.description %></td>
+              <td><a href="/gallery/<%= m._id %>">DETAILS</a></td>
+              <form action="/gallery/<%= m._id %>?_method=DELETE" method="POST">
+                <button type="submit">DELETE PHOTO</button>
+              </form>
+              <form action="/gallery/<%= m._id %>?_method=PUT" method="POST">
+                <!-- Value attribute is being set to the comment's current text -->
+                <input name="text" value="<%= m.description %>">
+                <button type="submit">UPDATE DESCRIPTION</button>
+              </form>
             </tr>
             <% }); %>
           </tbody>

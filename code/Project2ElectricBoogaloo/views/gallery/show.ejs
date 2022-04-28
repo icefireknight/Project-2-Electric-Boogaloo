@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>Url: </div>
+    <div><%= photo.link %></div>
+    <div>Description: </div>
+    <div><%= photo.description %></div>
+    <br><br>
+    <h2>Comments</h2>
+    <form id="add-comment-form" method="POST" action="/gallery/<%= photo._id %>/comments">
+    <label>Comment:</label>
+    <textarea name="content"></textarea>
+    <input type="submit" value="Add Comment">
+    </form>
+    <ul>
+        <% photo.comments.forEach(function(r) {%>
+            <li><%= r.content %></li>
+            <% }); %>
+    </ul>
+</body>
+</html>
